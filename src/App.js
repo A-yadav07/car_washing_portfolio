@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Navbar from './pages/Navbar';
+import { FaBeer, FaHamburger } from "react-icons/fa";
+import Landingpages from './pages/Landingpages';
+import Aboutus from './pages/Aboutus';
+import Overservice from './pages/Overservice';
+import Footer from './pages/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <Landingpages/>
+      <Aboutus/>
+      <Overservice/>
+      <Footer/>
     </div>
   );
 }
