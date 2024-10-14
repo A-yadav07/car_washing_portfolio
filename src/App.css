@@ -10,12 +10,10 @@ body{
   justify-content: space-between;
 }
 
-
-
 .img1{
   height: 80px;
-  width: 120px;
-  align-items: start;
+  width: 100px;
+  padding-left: 20px;
 }
 
 .Manu{
@@ -37,11 +35,11 @@ body{
   transform: scale(1.5);
 }
 
-.button{
+.button1{
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  padding-right: 20px;
 }
 
 button{
@@ -72,6 +70,54 @@ button:hover{
   align-items: center;
   flex-direction: column;
   padding-bottom: 20px;
+}
+
+
+
+.registerform {
+  height: 350px;
+  width: 210px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color:black;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  top: 150px;
+  right: 50px;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  
+}
+label{
+  color: aqua;
+}
+input{
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding-left: 10px;
+  color: white;
+}
+.button2 {
+  width: 180px;
+  height: auto;
+  padding: 10px 20px;
+  background-color: black;
+  border: 1px solid white;
+  /* border: none; */
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1;
+  position: fixed;
+  top: 330px;
+  right: -69px;
+  rotate: 90deg;
+  
 }
 
 
@@ -131,6 +177,8 @@ img{
   background-color: white;
   text-align: center;
   transition: 0.2s ease;
+  color: rgb(0, 0, 0);
+  padding: 20px;
 }
 
 .cart01:hover{
@@ -138,6 +186,8 @@ img{
   border-radius: 10px;
   box-shadow: 0px 0px 9px white;
 }
+
+
 
 .textimg{
   height: 50px;
@@ -179,7 +229,6 @@ img{
 }
 
 .p-overservice{
- height: 550px;
   background-image: url(./asete/sports-car-driving-asphalt-road-night-generative-ai.jpg);  
  background-size: cover;
   display: flex;
@@ -198,7 +247,7 @@ h1{
 }
 
 .cartservice{
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

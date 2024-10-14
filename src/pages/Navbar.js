@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArchive, FaArrowAltCircleDown, FaArrowCircleDown, FaArrowDown, FaBan, FaBeer, FaCarCrash, FaHamburger, FaHome, FaPage4, FaPhone, FaToolbox } from "react-icons/fa";
-import img from "../asete/carwash.jpeg";
+import img from "../asete/view-3d-car-model.jpg";
 const Navbar = () => {
   return (
     <div className="Navbar">
@@ -14,7 +14,7 @@ const Navbar = () => {
         <p><FaPhone/> Contact Us</p>
         <p><FaPage4/>Pages</p>
       </div>
-      <div className="button">
+      <div className="button1">
         <button><FaCarCrash/> Get An Appointment</button>
       </div>
     </div>

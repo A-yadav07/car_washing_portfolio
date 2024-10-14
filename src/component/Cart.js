@@ -1,5 +1,4 @@
 import React from 'react'
-import img from "../asete/car-wash1.jpg";
 
 const Cart = ({image , cartext}) => {
   return (

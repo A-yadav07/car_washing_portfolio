@@ -1,29 +1,77 @@
+// Overservice.js
 import React from "react";
-import Cart from "../component/Cart";
-import image1 from '../asete/carair.jpg';
-import image2 from '../asete/carcleling.jpg';
-import image3 from '../asete/carcolor.jpg';
-import image4 from '../asete/carimage1.jpeg';
-import image5 from '../asete/caroil.jpg';
-import image6 from '../asete/carrepair.jpg';
-import image7 from '../asete/car-wash1.jpg';
-import image8 from '../asete/carwash.jpg';
-import {FaCarBatteryattery} from "react-icons/fa";
 import Cart01 from "../component/Cart01";
+
+// import { icons } from "react-icons";
+const cardData =[
+  {
+    "id":1,
+    "icon": "fa-solid fa-fan",
+    "title": "Air Conditioning Service",
+    "description": "Complete air conditioning service to keep your car's climate comfortable."
+  },
+  {
+    "id":2,
+    "icon": "fa-solid fa-broom",
+    "title": "Car Cleaning",
+    "description": "Professional interior and exterior car cleaning services."
+  },
+  {
+    "id":3,
+    "icon": "fa-solid fa-paint-roller",
+    "title": "Car Painting",
+    "description": "High-quality car painting services for a fresh new look."
+  },
+  {
+    "id":4,
+    "icon": "fa-brands fa-empire",
+    "title": "Tire Services",
+    "description": "Comprehensive tire services, including rotation and replacement."
+  },
+  {
+    "id":5,
+    "icon": "fa-solid fa-oil-can",
+    "title": "Oil Change",
+    "description": "Regular oil change service to keep your engine running smoothly."
+  },
+  {
+    "id":6,
+    "icon": "fa-solid fa-screwdriver-wrench",
+    "title": "Car Repair",
+    "description": "Expert car repair services for all makes and models."
+  },
+  {
+    "id":7,
+    "icon": "fa-solid fa-droplet",
+    "title": "Exterior Wash",
+    "description": "Thorough exterior washing to remove dirt and grime."
+  },
+  {
+    "id":8,
+    "icon": "fa-solid fa-shower",
+    "title": "Full Car Wash",
+    "description": "Complete car wash service, including interior and exterior cleaning."
+  }
+];
+
+
 const Overservice = () => {
   return (
     <div className="p-overservice">
-      <h1>      Over Service
-      </h1>
+      <h1>Over Service</h1>
+
       <div className="cartservice">
-        <Cart01 image={image1}/>
-        <Cart01 image={image2}/>
-        <Cart01 image={image3}/>
-        <Cart01 image={image4}/>
-        <Cart01 image={image5}/>
-        <Cart01 image={image6}/>
-        <Cart01 image={image7}/>
-        <Cart01 image={image8}/>
+        {cardData.map((item, id) => {
+          return (
+            <Cart01
+            key={id}
+              icons={item.icon}
+              title={item.title}
+              description={item.description}
+            />
+          );
+        })}
+       
       </div>
     </div>
   );

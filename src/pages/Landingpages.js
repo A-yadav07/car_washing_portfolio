@@ -9,6 +9,7 @@ const Landingpages = () => {
             <button >Discover More</button>
         </p>
         </span>
+        
     </div>
 
     
