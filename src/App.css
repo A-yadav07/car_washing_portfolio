@@ -11,14 +11,19 @@ body{
 }
 
 .img1{
-  height: 80px;
-  width: 100px;
+  height: 100px;
+  width: 90px;
   padding-left: 20px;
+  mix-blend-mode: screen;
+}
+
+.nav h4{
+  color: white;
 }
 
 .Manu{
   display: flex;
-  gap: 35px;
+  gap: 25px;
   justify-content: space-evenly;
   align-items: center;
   font-size: 12px;
@@ -33,9 +38,19 @@ body{
 
 .Manu p:hover{
   transform: scale(1.5);
+  color: aqua;
+  text-decoration: underline 2px aqua;
 }
 
 .button1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.burgericon{
+  color: rgb(246, 234, 234);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +58,7 @@ body{
 }
 
 button{
-  height: 30px;
+  height: auto;
   background-color: black;
   border: 1px solid white;
   border-radius: 5px;
@@ -71,19 +86,21 @@ button:hover{
   flex-direction: column;
   padding-bottom: 20px;
 }
-
-
-
+.home-page h1{
+color: white;
+text-shadow: 1px 1px 2px rgb(2, 2, 2), 0 0 25px rgb(3, 3, 249), 0 0 5px darkblue;
+}
 .registerform {
   height: 350px;
   width: 210px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  background-color:black;
+  background-image: url(./asete/selective-focus-shot-man-cleaning-car-s-back-headlight-with-microfiber-cloth.jpg);
+  background-size: cover;
+  background-position: center;
   border: 1px solid white;
   color: white;
-  text-align: center;
   top: 150px;
   right: 50px;
   padding: 20px;
@@ -91,18 +108,34 @@ button:hover{
   z-index: 1;
   
 }
+h2{
+  
+  text-align: center;
+}
 label{
+  padding-left: 20px;
   color: aqua;
 }
 input{
   height: 25px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(250, 249, 249, 0.991);
   border: none;
   border-radius: 10px;
   margin: 10px;
   padding-left: 10px;
+  color: black;
+}
+
+input:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 9px white;
   color: white;
 }
+
+.registerbutton{
+  margin-left: 70px;
+}
+
 .button2 {
   width: 180px;
   height: auto;
@@ -120,12 +153,15 @@ input{
   
 }
 
+.mainabout{
+  height: 600px;
+  background-color: black;
+}
 
 .first{
   height: 400px;
   width: 100%;
-  background-image: url(./asete/view-3d-car-model.jpg);
-  background-size: cover;
+  background-color: black;
   height: 200px;
   position: relative;
 }
@@ -200,40 +236,38 @@ img{
 }
 
 .second{
-  height: auto;
+  height: 350px;
   width: 100%;
   background-color: black; 
-  background-size: cover;
   display: flex;
+  justify-content: space-evenly;
 }
 
 
 .textabout{
   width: 50%;
   color: white;
+  text-align: center;
 }
 
-.aboutcart{
-  display: flex;
-  justify-content: space-evenly;
+
+
+.photo{
   width: 50%;
-}
-
-.up{
-  margin-top: -50px;
-  z-index: 1;
-}
-
-.down{
-  margin-top: 50px;
+  border: 1px solid white;
+  margin: 20px;
+  background-image: url(./asete/chatgptcarwash.webp);
+  background-size: cover;
+  /* background-position: center; */
 }
 
 .p-overservice{
-  background-image: url(./asete/sports-car-driving-asphalt-road-night-generative-ai.jpg);  
+ background-image: url(./asete/sports-car-driving-asphalt-road-night-generative-ai.jpg);
  background-size: cover;
+ background-position: center;
   display: flex;
  flex-direction: column;
- justify-content: center;
+ justify-content: space-evenly;
  align-items: center ;
  padding: 20px;
  
@@ -252,27 +286,140 @@ h1{
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
-  
+  gap: 20px; 
 }
 
-.footer{
-  height: 250px;
-  width: auto;
-  background-color: black;
+/* Footer Container */
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(1, 1, 57);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start; /* Align items at the top */
+  text-align: left;
+  gap: 20px; /* Gap between footer sections */
+ 
 }
-.servicefooter{
- color: white;
- text-align: center;
- text-decoration: underline;
+
+/* Footer Section Labels */
+.footer-section-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Footer Services Section */
+.servicefooter {
+  text-align: left;
+  text-decoration: underline;
+  margin: 10px 10px;
+
+}
+
+/* Logo Section */
+.logofooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 10px;
+  font-size: large;
+}
+
+.logofooter h4 {
+  font-weight: 900;
+  font-family: Arial, sans-serif;
+  margin: 0;
+
+}
+
+/* Location Section */
+.locationfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Footer Links and Hover Effects */
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Responsive Footer */
+@media (max-width: 550px) {
+  .footer {
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 30px; /* Increase gap for mobile */
+  }
+  
+  .logofooter {
+    align-items: flex-start;
+  }
+  
+  .locationfooter {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+/* Accessibility Focus Styles */
+.footer a:focus {
+  outline: 2px solid #f1c40f;
+  outline-offset: 4px;
+}
+
+.contactme{
+  margin: 10px 10px;
+  font-size: large;
+
 }
 
 .copyright{
+  background-color: rgb(1, 1, 46);
   color: white;
   text-align: center;
+  padding: 30px;
+ 
 }
-.socialmidea{
-  color: white;
-  text-align: center;
-  gap: 5px;
+.ssm{
+  gap:20px;
+  padding: 15px;
+}
+
+/* for mobile view */
+
+@media screen and (max-width: 550px) {
+  .Manu {
+    display: none; 
+  }
+  .button1{
+    display: none;
+  }
+  .second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    /* bottom: 10px; */
+  }
+  .photo{
+    display: none;
+  }
+ 
+  .container{
+    display: grid;
+  }
+}
+
+
+@media screen and (min-width: 550px) {
+  .burgericon {
+    display: none; 
+  }
 }

@@ -7,6 +7,7 @@ import Aboutus from './pages/Aboutus';
 import Overservice from './pages/Overservice';
 import Footer from './pages/Footer';
 import Loginpage from './pages/Loginpage';
+import Copyrightfooter from './pages/Copyrightfooter';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Aboutus/>
       <Overservice/>
       <Footer/>
+      <Copyrightfooter/>
     </div>
   );
 }

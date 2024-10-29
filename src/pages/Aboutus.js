@@ -4,12 +4,10 @@ import image01 from '../asete/carrepair.jpg';
 import image02 from '../asete/carair.jpg';
 import image03 from '../asete/carcolor.jpg';
 import image04 from '../asete/caroil.jpg';
-import image05 from '../asete/carwash.jpg';
-import image06 from '../asete/carcleling.jpg';
 
 const Aboutus = () => {
   return (
-    <div>
+    <div className="mainabout">
       <div className="first">
         <div className="container">
           <Cart image={image01} cartext={"Rpairing The Car"}/>
@@ -19,10 +17,11 @@ const Aboutus = () => {
         </div>
       </div>
       <div className="second">
-        <div className="aboutcart">
-        <div className="down"><Cart image={image05} cartext={"Car Wash"}/></div>
-        <div className="up"><Cart image={image06} cartext={"Modify The Car"}/></div>
-        </div>
+        
+          <div className="photo">
+             
+          </div>
+        
         <div className="textabout">
           <h3>About Us</h3>
           <p>

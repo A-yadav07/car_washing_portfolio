@@ -67,8 +67,7 @@ const Register = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Enter your name"
-            />
+              placeholder="Enter your name"/>
             <br />
           </div>
           <div className="registertxt">
@@ -79,7 +78,7 @@ const Register = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter your email"
+              placeholder ="Enter your email"
             />
             <br />
           </div>
