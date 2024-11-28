@@ -14,11 +14,11 @@ const Navbar = () => {
         <img src={img} className="img1" />
       </div>
       <div className="Manu">
-        <p><FaHome/> Home</p>
-        <p><FaArchive/> About Us</p>
-        <p><FaToolbox/> Srvice</p>
-        <p><FaPhone/> Contact Us</p>
-        <p><FaPage4/>Pages</p>
+        <p> Home</p>
+        <p> About Us</p>
+        <p> Srvice</p>
+        <p> Contact Us</p>
+        <p>Pages</p>
       </div>
       <div className="button1">
         <button><FaCarCrash/> Get An Appointment</button>
